@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -23,12 +24,17 @@ html {
 }
 
 header {
+    background-image: -webkit-gradient(linear , left top, left bottom , from(rgba(0, 0, 0, 0.7)) , to(rgba(0, 0, 0, 0.7))) , url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)) , url(img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
     
+}
+
+header h1 {
+    font-size: 395%;
 }
 
 section {
@@ -38,7 +44,9 @@ section {
 img {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -o-object-fit: cover;
     object-fit: cover;
     background-size: cover;
 }
@@ -88,6 +96,7 @@ h3 {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50% , -50%);
     transform: translate(-50% , -50%);
 }
 
@@ -120,6 +129,7 @@ h3 {
 .more:active {
     background: none;
     border: 2px solid #27ae60;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -128,6 +138,7 @@ h3 {
     
     background-color: #27ae60;
     border: 2px solid #27ae60;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -181,6 +192,7 @@ h3 {
     text-decoration: none;
     letter-spacing: 1px;
     border-bottom: 3px solid #27ae60;
+    -webkit-transition: border 0.3s, font-size 1s;
     transition: border 0.3s, font-size 1s;
 }
 
@@ -210,7 +222,9 @@ h3 {
 .meals li {
     width: 25%;
     display: block;
+    -o-object-fit: fill;
     object-fit: fill;
+    -o-object-position: center;
     object-position: center;
     float: left;
     overflow: hidden;
@@ -220,7 +234,9 @@ h3 {
 .fit {
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
     object-fit: cover;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -229,12 +245,16 @@ h3 {
 }
 
 .fit:hover{
+    -webkit-transition: 0.8s;
     transition: 0.8s;
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
     overflow: hidden;
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
     object-fit: cover;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -344,6 +364,7 @@ h3 {
 }
 
 .section-customer {
+    background-image: -webkit-gradient(linear , left top, left bottom , from(rgba(0, 0, 0, 0.7)) , to(rgba(0, 0, 0, 0.7))) , url(img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)) , url(img/back-customers.jpg);
     background-size: cover;
     color: #fff;
@@ -422,6 +443,7 @@ h3 {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-shadow: 2px 5px 10px #363636;
     box-shadow: 2px 5px 10px #363636;
 }
 
@@ -436,6 +458,7 @@ h3 {
     color: #fff;
     background-color: #27ae60;
     margin-top: 25px;
+    -webkit-transition: 0.37s;
     transition: 0.37s;
 }
 
@@ -518,6 +541,7 @@ input[type=submit] {
     padding: 7px;
     background-color: #27ae60;
     color: #fff;
+    -webkit-box-shadow: 0px 2px 2px #ccc;
     box-shadow: 0px 2px 2px #ccc;
 }
 
@@ -576,4 +600,3 @@ input[type=submit] {
     text-align: center;
     margin-bottom: 10px;
 }
-
